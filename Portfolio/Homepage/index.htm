@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+<style>
+    
+</style>
+    
+    <meta charset="utf-8" />
+    <meta name="Description" content="Sample Website for learning HTML5 and CSS3" />
+    <link rel="stylesheet" type="text/css" href="../css/uCorp.css" />
+    <title>Matthew Hayes
+    </title>
+  </head>
+
+  <body>
+    <header>
+      <h1>Matthew Hayes</h1>
+      <nav class="nav-menu">
+        <a class="navlinks" href="">Professional Documents</a>
+        <a class="navlinks" href="">Refrences</a>
+        <a class="navlinks" href="">About Me</a>
+        <a class="navlinks" href="">Certifications</a>
+        <a class="navlinks" href="">Contacts</a>
+      </nav>
+    </header>
+    <div class="content-container">
+      <div class="text-container">
+        <p class="portfolio-text">Portfolio</p>
+        <iframe id="pdfViewer" style="display: none; width: 80%; height: 1000px;"></iframe>
+        <button id="nextButton" style="display: none;">Next Document</button>
+        <!-- Adjust the width and height as needed -->
+      </div>
+      <img src="M-44.JPG" alt="Description of image">
+    </div>
+    <script src="https://mozilla.github.io/pdf.js/build/pdf.js"></script>
+    <script>
+var currentDocument = 'coverletter.pdf';
+
+document.querySelector('.nav-menu a[href=""]').addEventListener('click', function(e) {
+  e.preventDefault();
+  document.getElementById('pdfViewer').style.display = 'block';
+  document.getElementById('pdfViewer').src = currentDocument; 
+  document.getElementById('nextButton').style.display = 'block';
+  document.getElementById('nextButton').textContent = 'Next Document';
+});
+
+document.getElementById('nextButton').addEventListener('click', function() {
+  if (currentDocument === 'coverletter.pdf') {
+    currentDocument = 'resume.pdf';
+    document.getElementById('nextButton').textContent = 'Previous Document';
+  } else {
+    currentDocument = 'coverletter.pdf';
+    document.getElementById('nextButton').textContent = 'Next Document';
+  }
+  document.getElementById('pdfViewer').src = currentDocument;
+});
+    </script>
+
+
+  </body>
+</html>
