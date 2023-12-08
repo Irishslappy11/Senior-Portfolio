@@ -33,7 +33,7 @@
       <img src="/assets/media/M-44.JPG" alt="Description of image">
     </div>
     <script>
-var currentDocument = 'coverletter.pdf';
+var currentDocument = '/assets/pdf/coverletter.pdf';
 
 document.querySelector('.nav-menu a[href=""]').addEventListener('click', function(e) {
   e.preventDefault();
@@ -44,11 +44,11 @@ document.querySelector('.nav-menu a[href=""]').addEventListener('click', functio
 });
 
 document.getElementById('nextButton').addEventListener('click', function() {
-  if (currentDocument === 'coverletter.pdf') {
-    currentDocument = 'resume.pdf';
+  if (currentDocument === '/assets/pdf/coverletter.pdf') {
+    currentDocument = '/assets/pdf/resume.pdf';
     document.getElementById('nextButton').textContent = 'Previous Document';
   } else {
-    currentDocument = 'coverletter.pdf';
+    currentDocument = '/assets/pdf/coverletter.pdf';
     document.getElementById('nextButton').textContent = 'Next Document';
   }
   document.getElementById('pdfViewer').src = currentDocument;
