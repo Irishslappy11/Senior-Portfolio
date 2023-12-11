@@ -7,7 +7,7 @@
     
     <meta charset="utf-8" />
     <meta name="" content="" />
-    <link rel="stylesheet" type="text/css" href="/assets/css/index.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/css/index.css">
     <title>Matthew Hayes
     </title>
   </head>
@@ -30,10 +30,10 @@
         <button id="nextButton" style="display: none;">Next Document</button>
         <!-- Adjust the width and height as needed -->
       </div>
-      <img src="/assets/media/M-44.JPG" alt="Description of image">
+      <img src="./assets/media/M-44.JPG" alt="Description of image">
     </div>
     <script>
-var currentDocument = '/assets/pdf/coverletter.pdf';
+var currentDocument = './assets/pdf/coverletter.pdf';
 
 document.querySelector('.nav-menu a[href=""]').addEventListener('click', function(e) {
   e.preventDefault();
@@ -44,11 +44,11 @@ document.querySelector('.nav-menu a[href=""]').addEventListener('click', functio
 });
 
 document.getElementById('nextButton').addEventListener('click', function() {
-  if (currentDocument === '/assets/pdf/coverletter.pdf') {
-    currentDocument = '/assets/pdf/resume.pdf';
+  if (currentDocument === './assets/pdf/coverletter.pdf') {
+    currentDocument = './assets/pdf/resume.pdf';
     document.getElementById('nextButton').textContent = 'Previous Document';
   } else {
-    currentDocument = '/assets/pdf/coverletter.pdf';
+    currentDocument = './assets/pdf/coverletter.pdf';
     document.getElementById('nextButton').textContent = 'Next Document';
   }
   document.getElementById('pdfViewer').src = currentDocument;
