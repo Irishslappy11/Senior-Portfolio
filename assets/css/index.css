@@ -48,8 +48,8 @@ h1 {
 }
 
 .content-container img {
-  width: 50%;
-  height: 92.5vh;
+  max-width: 50%;
+  height: auto;
   object-fit: cover;
   order: 1;
 }
