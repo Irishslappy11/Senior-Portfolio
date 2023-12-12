@@ -49,7 +49,7 @@ h1 {
 
 .content-container img {
   max-width: 50%;
-  height: auto;
+  height: 92.5vh;
   object-fit: cover;
   order: 1;
 }
