@@ -46,7 +46,7 @@ h1 {
 .portfolio-text0 {
   font-weight: bold;
   color: black;
-  font-size: 3em;
+  font-size: 6.5em;
 }
 
 .content-container img {
@@ -84,6 +84,20 @@ h1 {
   font-size: 3em;
 }
 
+.portfolio-text1 {
+  opacity: 0;
+  animation: fadeIn 1.5s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 .portfolio-text2 {
   display: none;
 }
@@ -92,6 +106,20 @@ h1 {
   font-weight: bold;
   color: black;
   font-size: 3em;
+}
+
+.portfolio-text2 {
+  opacity: 0;
+  animation: fadeIn 1.5s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 .portfolio-text3 {
@@ -104,6 +132,20 @@ h1 {
   font-size: 3em;
 }
 
+.portfolio-text3 {
+  opacity: 0;
+  animation: fadeIn 1.5s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 .portfolio-text4 {
   display: none;
 }
@@ -114,6 +156,20 @@ h1 {
   font-size: 3em;
 }
 
+.portfolio-text4 {
+  opacity: 0;
+  animation: fadeIn 1.5s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 .portfolio-text5 {
   display: none;
 }
@@ -122,6 +178,20 @@ h1 {
   font-weight: bold;
   color: black;
   font-size: 3em;
+}
+
+.portfolio-text5 {
+  opacity: 0;
+  animation: fadeIn 1.5s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 .text-container {
