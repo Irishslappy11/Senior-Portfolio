@@ -2,6 +2,8 @@ html, body {
   margin: 0;
   padding: 0;
   font-family: 'Roboto', sans-serif;
+  height: 100vh; /* Add this line */
+  overflow-x: hidden; /* Add this line to prevent horizontal scrolling */
 }
 
 header {
@@ -41,20 +43,20 @@ h1 {
   width: 50%;
 }
 
-.portfolio-text {
+.portfolio-text0 {
   font-weight: bold;
   color: black;
-  font-size: 4vw;
+  font-size: 3em;
 }
 
 .content-container img {
   width: 50%;
-  height: 92.5vh;
+  height: 87vh;
   object-fit: cover;
   order: 1;
 }
 
-.portfolio-text {
+.portfolio-text0 {
   opacity: 0;
   animation: fadeIn 3s ease-in-out forwards;
 }
@@ -68,4 +70,17 @@ h1 {
   }
 }
 
+.portfolio-text0 {
+  display: block;
+}
+
+.portfolio-text1 {
+  display: none;
+}
+
+.portfolio-text1 {
+  font-weight: bold;
+  color: black;
+  font-size: 3em;
+}
 /**/
