@@ -16,7 +16,7 @@
     <header>
       <h1>Matthew Hayes</h1>
       <nav class="nav-menu">
-        <a class="navlinks" href="">Professional Documents</a>
+        <a class="navlinks" href="" onclick="">Professional Documents</a>
         <a class="navlinks" href="">Refrences</a>
         <a class="navlinks" href="">About Me</a>
         <a class="navlinks" href="">Certifications</a>
@@ -27,6 +27,10 @@
       <div class="text-container">
         <p class="portfolio-text0">I know I'm going to get got, but I'm going to get mine more than I get got, though. <br> - Marshawn Lynch</p>
         <p class="portfolio-text1">Professional Documents</p>
+        <p class="portfolio-text2">Refrences</p>
+        <p class="portfolio-text3">About Me</p>
+        <p class="portfolio-text4">Certifications</p>
+        <p class="portfolio-text5">Contact</p>
         <iframe id="pdfViewer" style="display: none; width: 80%; height: 1000px;"></iframe>
         <button id="nextButton" style="display: none;">Next Document</button>
         <!-- Adjust the width and height as needed -->
@@ -34,7 +38,8 @@
       <img src="./assets/media/M-44.JPG" alt="Description of image">
     </div>
     <script>
-// Hide portfolio-text1 and show portfolio-text0
+//display professional documents text
+//make function
 document.querySelector('.nav-menu a[href=""]').addEventListener('click', function(e) {
   e.preventDefault();
   document.getElementById('pdfViewer').style.display = 'block';
@@ -42,9 +47,13 @@ document.querySelector('.nav-menu a[href=""]').addEventListener('click', functio
   document.getElementById('nextButton').style.display = 'block';
   document.getElementById('nextButton').textContent = 'Next Document';
 
+  // Hide portfolio-text0 and show portfolio-text1
   document.querySelector('.portfolio-text0').style.display = 'none';
   document.querySelector('.portfolio-text1').style.display = 'block';
 });
+
+//display refrences text
+
 
 //display professional documents
 var currentDocument = './assets/pdf/coverletter.pdf';
