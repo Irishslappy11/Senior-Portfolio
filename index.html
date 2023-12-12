@@ -25,7 +25,8 @@
     </header>
     <div class="content-container">
       <div class="text-container">
-        <p class="portfolio-text">I know I'm going to get got, but I'm going to get mine more than I get got, though. <br> - Marshawn Lynch</p>
+        <p class="portfolio-text0">I know I'm going to get got, but I'm going to get mine more than I get got, though. <br> - Marshawn Lynch</p>
+        <p class="portfolio-text1">Professional Documents</p>
         <iframe id="pdfViewer" style="display: none; width: 80%; height: 1000px;"></iframe>
         <button id="nextButton" style="display: none;">Next Document</button>
         <!-- Adjust the width and height as needed -->
@@ -33,6 +34,19 @@
       <img src="./assets/media/M-44.JPG" alt="Description of image">
     </div>
     <script>
+// Hide portfolio-text1 and show portfolio-text0
+document.querySelector('.nav-menu a[href=""]').addEventListener('click', function(e) {
+  e.preventDefault();
+  document.getElementById('pdfViewer').style.display = 'block';
+  document.getElementById('pdfViewer').src = currentDocument; 
+  document.getElementById('nextButton').style.display = 'block';
+  document.getElementById('nextButton').textContent = 'Next Document';
+
+  document.querySelector('.portfolio-text0').style.display = 'none';
+  document.querySelector('.portfolio-text1').style.display = 'block';
+});
+
+//display professional documents
 var currentDocument = './assets/pdf/coverletter.pdf';
 
 document.querySelector('.nav-menu a[href=""]').addEventListener('click', function(e) {
