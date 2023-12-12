@@ -51,14 +51,14 @@ h1 {
 
 .content-container img {
   width: 50%;
-  height: 87vh;
+  height: 89.2vh;
   object-fit: cover;
   order: 1;
 }
 
 .portfolio-text0 {
   opacity: 0;
-  animation: fadeIn 3s ease-in-out forwards;
+  animation: fadeIn 1.5s ease-in-out forwards;
 }
 
 @keyframes fadeIn {
@@ -83,4 +83,51 @@ h1 {
   color: black;
   font-size: 3em;
 }
-/**/
+
+.portfolio-text2 {
+  display: none;
+}
+
+.portfolio-text2 {
+  font-weight: bold;
+  color: black;
+  font-size: 3em;
+}
+
+.portfolio-text3 {
+  display: none;
+}
+
+.portfolio-text3 {
+  font-weight: bold;
+  color: black;
+  font-size: 3em;
+}
+
+.portfolio-text4 {
+  display: none;
+}
+
+.portfolio-text4 {
+  font-weight: bold;
+  color: black;
+  font-size: 3em;
+}
+
+.portfolio-text5 {
+  display: none;
+}
+
+.portfolio-text5 {
+  font-weight: bold;
+  color: black;
+  font-size: 3em;
+}
+
+.text-container {
+  height: 89vh;
+}
+
+
+
+
