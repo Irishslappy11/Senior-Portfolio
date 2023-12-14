@@ -18,7 +18,7 @@
       <nav class="nav-menu">
         <a class="navlinks" href="" onclick="displayProfessionalDocuments(); return false;">Professional Documents</a>
         <a class="navlinks" href="" onclick="displayReferences(); return false;">References</a>
-        <a class="navlinks" href="" onclick="displayaboutme(); return false;">About Me</a>
+        <a class="navlinks" href="" onclick="displayNextAboutMe(); return false;">About Me</a>
         <a class="navlinks" href="">Certifications</a>
         <a class="navlinks" href="">Contact</a>
       </nav>
@@ -52,7 +52,7 @@
 
       var documents3 = [
         './assets/pdf/About me.pdf',
-        './assets/pdf/Matthew Hayes - 25 Goals.pdf'
+        './assests/pdf/About me.pdf'
       ];
 
       
@@ -76,7 +76,7 @@
         portfolioText0.style.display = 'none';
         portfolioText1.style.display = 'block';
         portfolioText2.style.display = 'none';
-        portfoliotext3.style.display = 'none';
+        portfoliotext3.style.display = 'none'
       
         displayDocument(documents1[0]);
         document.getElementById('nextButton').style.display = 'block';
@@ -88,11 +88,12 @@
         var portfolioText1 = document.querySelector('.portfolio-text1');
         var portfolioText2 = document.querySelector('.portfolio-text2');
         var portfoliotext3 = document.queryselector('.portfolio-text3');
-      
+     
         portfolioText0.style.display = 'none';
         portfolioText1.style.display = 'none';
         portfolioText2.style.display = 'block';
         portfoliotext3.style.display = 'none';
+
       
         displayDocument(documents2[0]);
         document.getElementById('nextButton').style.display = 'block';
@@ -117,6 +118,7 @@
       // Current document indices
 var currentDocumentIndex1 = 0;
 var currentDocumentIndex2 = 0;
+var currentDocumentIndex3 = 0;
 
 // Display the next document from the given list and update the current index
 function displayNextDocument(documents, currentIndex) {
@@ -135,8 +137,8 @@ function displayNextReference() {
   currentDocumentIndex2 = displayNextDocument(documents2, currentDocumentIndex2);
 }
 
-// Display the next about me document
-function displayNextReference() {
+// Display the next About me document
+function displayNextAboutMe() {
   currentDocumentIndex3 = displayNextDocument(documents3, currentDocumentIndex3);
 }
 
