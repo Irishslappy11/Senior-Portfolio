@@ -1,7 +1,8 @@
-html, body {
+html,
+body {
   margin: 0;
   padding: 0;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   height: 100vh; /* Add this line */
   overflow-x: hidden; /* Add this line to prevent horizontal scrolling */
 }
@@ -197,7 +198,3 @@ h1 {
 .text-container {
   height: 89vh;
 }
-
-
-
-
